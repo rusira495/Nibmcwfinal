@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe' NIBM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og6-b4-kGX">
-                                <rect key="frame" x="98" y="598.5" width="220" height="36"/>
+                                <rect key="frame" x="114" y="629" width="186.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,11 +33,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
-                            <constraint firstItem="og6-b4-kGX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="F8E-To-4wr"/>
                             <constraint firstItem="tDZ-3k-Y1b" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FBk-MT-Bjm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="og6-b4-kGX" secondAttribute="trailing" constant="113.5" id="RDM-dU-wMt"/>
+                            <constraint firstItem="og6-b4-kGX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="Wkg-T6-Ia6"/>
+                            <constraint firstItem="og6-b4-kGX" firstAttribute="top" secondItem="tDZ-3k-Y1b" secondAttribute="bottom" constant="100" id="ZgN-QY-Dr1"/>
                             <constraint firstItem="tDZ-3k-Y1b" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lPZ-SQ-aUf"/>
-                            <constraint firstItem="og6-b4-kGX" firstAttribute="top" secondItem="tDZ-3k-Y1b" secondAttribute="bottom" constant="69.5" id="meO-7n-k6t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="og6-b4-kGX" secondAttribute="trailing" constant="96" id="rxk-tt-v2P"/>
                         </constraints>
                     </view>
                 </viewController>

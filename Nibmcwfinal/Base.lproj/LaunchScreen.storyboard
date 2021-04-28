@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe' NIBM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og6-b4-kGX">
-                                <rect key="frame" x="117" y="591" width="181" height="36"/>
+                                <rect key="frame" x="98" y="598.5" width="220" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,17 +33,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
+                            <constraint firstItem="og6-b4-kGX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="F8E-To-4wr"/>
                             <constraint firstItem="tDZ-3k-Y1b" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FBk-MT-Bjm"/>
-                            <constraint firstItem="og6-b4-kGX" firstAttribute="top" secondItem="tDZ-3k-Y1b" secondAttribute="bottom" constant="62" id="IOj-Zn-xUf"/>
-                            <constraint firstItem="og6-b4-kGX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="bYh-5U-5xV"/>
                             <constraint firstItem="tDZ-3k-Y1b" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lPZ-SQ-aUf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="og6-b4-kGX" secondAttribute="trailing" constant="116" id="sh9-zZ-oCY"/>
+                            <constraint firstItem="og6-b4-kGX" firstAttribute="top" secondItem="tDZ-3k-Y1b" secondAttribute="bottom" constant="69.5" id="meO-7n-k6t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="og6-b4-kGX" secondAttribute="trailing" constant="96" id="rxk-tt-v2P"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>

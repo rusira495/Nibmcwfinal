@@ -84,6 +84,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKV-Zc-wLP">
                                 <rect key="frame" x="133" y="569" width="109" height="30"/>
                                 <state key="normal" title="Register ?"/>
+                                <connections>
+                                    <segue destination="WaV-Mn-okX" kind="presentation" id="gdC-qf-7xU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aG-Ag-ueH">
                                 <rect key="frame" x="100" y="617" width="175" height="30"/>
@@ -131,7 +134,7 @@
             <objects>
                 <viewController id="WaV-Mn-okX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l8X-T3-9ev">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Xgd-jp-BhD">
@@ -211,17 +214,16 @@
                                     <action selector="onloginpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N8O-E6-b8b"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dB-io-Q8v">
-                                <rect key="frame" x="100" y="553" width="96" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Have an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dB-io-Q8v">
+                                <rect key="frame" x="100" y="553" width="102.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNq-XZ-7y2">
-                                <rect key="frame" x="204" y="545" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LogIn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNq-XZ-7y2">
+                                <rect key="frame" x="209.5" y="544" width="45.5" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Log In">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                             </button>
@@ -231,20 +233,27 @@
                         <constraints>
                             <constraint firstItem="hRj-aq-a2w" firstAttribute="trailing" secondItem="p52-22-gnR" secondAttribute="trailing" constant="30" id="0TT-iH-7tR"/>
                             <constraint firstItem="JkN-vf-miH" firstAttribute="top" secondItem="GiT-WW-bpN" secondAttribute="bottom" constant="50" id="0hE-nu-qlx"/>
+                            <constraint firstItem="gNq-XZ-7y2" firstAttribute="leading" secondItem="8dB-io-Q8v" secondAttribute="trailing" constant="7" id="1jY-qJ-1f1"/>
                             <constraint firstItem="p52-22-gnR" firstAttribute="leading" secondItem="hRj-aq-a2w" secondAttribute="leading" constant="30" id="5pw-Pv-VMc"/>
+                            <constraint firstItem="8dB-io-Q8v" firstAttribute="leading" secondItem="hRj-aq-a2w" secondAttribute="leading" constant="100" id="712-A4-Rqi"/>
                             <constraint firstItem="Xgd-jp-BhD" firstAttribute="top" secondItem="hRj-aq-a2w" secondAttribute="top" constant="45" id="EbE-Lt-ISk"/>
                             <constraint firstItem="hRj-aq-a2w" firstAttribute="trailing" secondItem="JkN-vf-miH" secondAttribute="trailing" constant="100" id="HkE-lI-1dG"/>
                             <constraint firstItem="p52-22-gnR" firstAttribute="top" secondItem="Xgd-jp-BhD" secondAttribute="bottom" constant="25" id="PWv-1O-Ug2"/>
                             <constraint firstItem="UAy-sF-BWI" firstAttribute="leading" secondItem="hRj-aq-a2w" secondAttribute="leading" constant="30" id="QKZ-hL-drs"/>
                             <constraint firstItem="JkN-vf-miH" firstAttribute="leading" secondItem="hRj-aq-a2w" secondAttribute="leading" constant="100" id="QeU-Nz-Erd"/>
+                            <constraint firstItem="gNq-XZ-7y2" firstAttribute="top" secondItem="JkN-vf-miH" secondAttribute="bottom" constant="38.5" id="RI5-Hs-fP0"/>
                             <constraint firstItem="GiT-WW-bpN" firstAttribute="top" secondItem="UAy-sF-BWI" secondAttribute="bottom" constant="25" id="Z70-Nu-B7a"/>
                             <constraint firstItem="hRj-aq-a2w" firstAttribute="trailing" secondItem="GiT-WW-bpN" secondAttribute="trailing" constant="30" id="ZAy-7Q-Hh8"/>
                             <constraint firstItem="GiT-WW-bpN" firstAttribute="leading" secondItem="hRj-aq-a2w" secondAttribute="leading" constant="30" id="gWW-ng-LtN"/>
+                            <constraint firstItem="8dB-io-Q8v" firstAttribute="top" secondItem="JkN-vf-miH" secondAttribute="bottom" constant="47.5" id="kO9-fm-gP8"/>
                             <constraint firstItem="UAy-sF-BWI" firstAttribute="top" secondItem="p52-22-gnR" secondAttribute="bottom" constant="25" id="nV6-S9-D2w"/>
+                            <constraint firstItem="hRj-aq-a2w" firstAttribute="trailing" secondItem="gNq-XZ-7y2" secondAttribute="trailing" constant="120" id="tSc-PE-8Wa"/>
                             <constraint firstItem="Xgd-jp-BhD" firstAttribute="centerX" secondItem="l8X-T3-9ev" secondAttribute="centerX" id="um0-CO-yaf"/>
+                            <constraint firstItem="gNq-XZ-7y2" firstAttribute="leading" secondItem="8dB-io-Q8v" secondAttribute="trailing" constant="7" id="w0V-J7-qg2"/>
                             <constraint firstItem="hRj-aq-a2w" firstAttribute="trailing" secondItem="UAy-sF-BWI" secondAttribute="trailing" constant="30" id="yMg-eB-WSv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WYM-AA-Mjm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf1-0w-k1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

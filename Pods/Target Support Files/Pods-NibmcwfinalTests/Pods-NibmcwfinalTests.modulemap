@@ -1,0 +1,6 @@
+framework module Pods_NibmcwfinalTests {
+  umbrella header "Pods-NibmcwfinalTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

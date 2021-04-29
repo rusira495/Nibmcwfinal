@@ -221,7 +221,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNq-XZ-7y2">
-                                <rect key="frame" x="209.5" y="544" width="45.5" height="32"/>
+                                <rect key="frame" x="209.5" y="544" width="44.5" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" name="AccentColor"/>
@@ -247,7 +247,7 @@
                             <constraint firstItem="GiT-WW-bpN" firstAttribute="leading" secondItem="hRj-aq-a2w" secondAttribute="leading" constant="30" id="gWW-ng-LtN"/>
                             <constraint firstItem="8dB-io-Q8v" firstAttribute="top" secondItem="JkN-vf-miH" secondAttribute="bottom" constant="47.5" id="kO9-fm-gP8"/>
                             <constraint firstItem="UAy-sF-BWI" firstAttribute="top" secondItem="p52-22-gnR" secondAttribute="bottom" constant="25" id="nV6-S9-D2w"/>
-                            <constraint firstItem="hRj-aq-a2w" firstAttribute="trailing" secondItem="gNq-XZ-7y2" secondAttribute="trailing" constant="120" id="tSc-PE-8Wa"/>
+                            <constraint firstItem="hRj-aq-a2w" firstAttribute="trailing" secondItem="gNq-XZ-7y2" secondAttribute="trailing" constant="121" id="tSc-PE-8Wa"/>
                             <constraint firstItem="Xgd-jp-BhD" firstAttribute="centerX" secondItem="l8X-T3-9ev" secondAttribute="centerX" id="um0-CO-yaf"/>
                             <constraint firstItem="gNq-XZ-7y2" firstAttribute="leading" secondItem="8dB-io-Q8v" secondAttribute="trailing" constant="7" id="w0V-J7-qg2"/>
                             <constraint firstItem="hRj-aq-a2w" firstAttribute="trailing" secondItem="UAy-sF-BWI" secondAttribute="trailing" constant="30" id="yMg-eB-WSv"/>

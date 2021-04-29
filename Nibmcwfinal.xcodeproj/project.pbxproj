@@ -10,6 +10,7 @@
 		794BA6D53D2D43649176EEBE /* Pods_NibmcwfinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E809C70E9E6999BE489B67 /* Pods_NibmcwfinalTests.framework */; };
 		8133D2F30B6E197FC5F86C6B /* Pods_Nibmcwfinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF3521909057789C3A7A611 /* Pods_Nibmcwfinal.framework */; };
 		CAE079EEFB7847DFB1DB141F /* Pods_Nibmcwfinal_NibmcwfinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E270DAA4BCF919D1FA42E8B /* Pods_Nibmcwfinal_NibmcwfinalUITests.framework */; };
+		CE144965263AD4AF007E5B59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE144964263AD4AF007E5B59 /* RegisterViewController.swift */; };
 		CE3AE5B5263A76CC00B7CE01 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */; };
 		CE87B06D263A800400E41A51 /* entitymodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87B06C263A800400E41A51 /* entitymodel.swift */; };
 		CED189B92637F5E9000EE982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189B82637F5E9000EE982 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		5D7847F5ACC88AF47FDAB03D /* Pods-NibmcwfinalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibmcwfinalTests.release.xcconfig"; path = "Target Support Files/Pods-NibmcwfinalTests/Pods-NibmcwfinalTests.release.xcconfig"; sourceTree = "<group>"; };
 		5DF3521909057789C3A7A611 /* Pods_Nibmcwfinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nibmcwfinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AFF29E81FD7D07D54D98FD /* Pods-NibmcwfinalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibmcwfinalTests.debug.xcconfig"; path = "Target Support Files/Pods-NibmcwfinalTests/Pods-NibmcwfinalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE144964263AD4AF007E5B59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		CE87B06C263A800400E41A51 /* entitymodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entitymodel.swift; sourceTree = "<group>"; };
 		CED189B52637F5E9000EE982 /* Nibmcwfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nibmcwfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */,
+				CE144964263AD4AF007E5B59 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3AE5B5263A76CC00B7CE01 /* loginViewController.swift in Sources */,
+				CE144965263AD4AF007E5B59 /* RegisterViewController.swift in Sources */,
 				CED189B92637F5E9000EE982 /* AppDelegate.swift in Sources */,
 				CE87B06D263A800400E41A51 /* entitymodel.swift in Sources */,
 				CED189BB2637F5E9000EE982 /* SceneDelegate.swift in Sources */,

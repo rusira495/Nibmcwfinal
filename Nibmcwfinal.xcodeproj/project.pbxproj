@@ -11,9 +11,9 @@
 		8133D2F30B6E197FC5F86C6B /* Pods_Nibmcwfinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF3521909057789C3A7A611 /* Pods_Nibmcwfinal.framework */; };
 		CAE079EEFB7847DFB1DB141F /* Pods_Nibmcwfinal_NibmcwfinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E270DAA4BCF919D1FA42E8B /* Pods_Nibmcwfinal_NibmcwfinalUITests.framework */; };
 		CE3AE5B5263A76CC00B7CE01 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */; };
+		CE87B06D263A800400E41A51 /* entitymodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87B06C263A800400E41A51 /* entitymodel.swift */; };
 		CED189B92637F5E9000EE982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189B82637F5E9000EE982 /* AppDelegate.swift */; };
 		CED189BB2637F5E9000EE982 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189BA2637F5E9000EE982 /* SceneDelegate.swift */; };
-		CED189BD2637F5E9000EE982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189BC2637F5E9000EE982 /* ViewController.swift */; };
 		CED189C02637F5E9000EE982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED189BE2637F5E9000EE982 /* Main.storyboard */; };
 		CED189C22637F5EA000EE982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED189C12637F5EA000EE982 /* Assets.xcassets */; };
 		CED189C52637F5EA000EE982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED189C32637F5EA000EE982 /* LaunchScreen.storyboard */; };
@@ -49,10 +49,10 @@
 		5DF3521909057789C3A7A611 /* Pods_Nibmcwfinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nibmcwfinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AFF29E81FD7D07D54D98FD /* Pods-NibmcwfinalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibmcwfinalTests.debug.xcconfig"; path = "Target Support Files/Pods-NibmcwfinalTests/Pods-NibmcwfinalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		CE87B06C263A800400E41A51 /* entitymodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entitymodel.swift; sourceTree = "<group>"; };
 		CED189B52637F5E9000EE982 /* Nibmcwfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nibmcwfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED189B82637F5E9000EE982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED189BA2637F5E9000EE982 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED189BC2637F5E9000EE982 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CED189BF2637F5E9000EE982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED189C12637F5EA000EE982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED189C42637F5EA000EE982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +111,7 @@
 		CE3AE5B1263A75ED00B7CE01 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE87B06C263A800400E41A51 /* entitymodel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,7 +162,6 @@
 				CE3AE5B1263A75ED00B7CE01 /* Model */,
 				CED189B82637F5E9000EE982 /* AppDelegate.swift */,
 				CED189BA2637F5E9000EE982 /* SceneDelegate.swift */,
-				CED189BC2637F5E9000EE982 /* ViewController.swift */,
 				CED189C12637F5EA000EE982 /* Assets.xcassets */,
 				CED189C32637F5EA000EE982 /* LaunchScreen.storyboard */,
 				CED189C62637F5EA000EE982 /* Info.plist */,
@@ -438,8 +438,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3AE5B5263A76CC00B7CE01 /* loginViewController.swift in Sources */,
-				CED189BD2637F5E9000EE982 /* ViewController.swift in Sources */,
 				CED189B92637F5E9000EE982 /* AppDelegate.swift in Sources */,
+				CE87B06D263A800400E41A51 /* entitymodel.swift in Sources */,
 				CED189BB2637F5E9000EE982 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

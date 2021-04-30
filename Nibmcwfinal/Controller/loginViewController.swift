@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import Loaf
 
 class loginViewController: UIViewController {
     
@@ -65,13 +66,14 @@ class loginViewController: UIViewController {
             
             if let err = error {
                 print(err.localizedDescription)
+                Loaf("User Name is Invalid", state: .success, sender: self).show()
                 return
             }
             
             // save user logged state
             let sessionManager = SessionManager()
             sessionManager.saveuserlogin()
-            
+            self.performSegue(withIdentifier: "SignInToHome", sender: nil)
                 
             }
         }

@@ -12,6 +12,7 @@ target 'Nibmcwfinal' do
  pod 'Firebase/Storage'
  pod 'SwiftyJSON'
  pod 'Kingfisher'
+ pod 'Loaf'
 
 target 'NibmcwfinalTests' do
     inherit! :search_paths

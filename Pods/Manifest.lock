@@ -53,6 +53,7 @@ PODS:
   - iOSDropDown (0.3.4)
   - Kingfisher (6.3.0)
   - leveldb-library (1.22.1)
+  - Loaf (0.7.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -67,6 +68,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - iOSDropDown
   - Kingfisher
+  - Loaf
   - SwiftyJSON
 
 SPEC REPOS:
@@ -83,6 +85,7 @@ SPEC REPOS:
     - iOSDropDown
     - Kingfisher
     - leveldb-library
+    - Loaf
     - nanopb
     - PromisesObjC
     - SwiftyJSON
@@ -100,10 +103,11 @@ SPEC CHECKSUMS:
   iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  Loaf: d69937cd00649f3fa260beb8b7aef0a1feb861ef
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 5dc0dff69b1579e2d641408a60923513e282921c
+PODFILE CHECKSUM: 15bf96c56d826b9e2e20e24eb53564ff8152f81f
 
 COCOAPODS: 1.10.1

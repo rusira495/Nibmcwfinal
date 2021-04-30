@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import Loaf
 
 class RegisterViewController: UIViewController {
 
@@ -40,12 +41,13 @@ class RegisterViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let err = error {
                 print(err.localizedDescription)
+                Loaf("User Sign up Failed", state: .error, sender: self).show()
                 return
             }
             
             if let results = authResult {
                 print("user added with email: \(results.user.email ?? "Not Found")")
-                
+                Loaf("User Register Success", state: .success, sender: self).show()
             }
             
         }

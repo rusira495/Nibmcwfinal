@@ -18,8 +18,10 @@ struct user {
 struct fooditem {
     var _id: String
     var foodname: String
+    var fooddescription: String
     var foodprice: Double
     var discount: Int
+    var image: String
 }
 
 

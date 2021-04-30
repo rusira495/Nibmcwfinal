@@ -423,20 +423,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XKJ-b7-Tu9">
-                                <rect key="frame" x="57" y="190" width="250" height="380"/>
+                                <rect key="frame" x="30" y="133" width="312" height="437"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View in Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIN-Yu-MVv">
-                                <rect key="frame" x="30" y="95" width="91" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View in Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIN-Yu-MVv">
+                                <rect key="frame" x="30" y="95" width="91" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJD-Z0-VEB">
-                                <rect key="frame" x="142" y="33" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJD-Z0-VEB">
+                                <rect key="frame" x="148" y="33" width="78" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
@@ -444,6 +442,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7P4-at-xiJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7P4-at-xiJ" firstAttribute="trailing" secondItem="SJD-Z0-VEB" secondAttribute="trailing" constant="149" id="4Lt-xb-LgV"/>
+                            <constraint firstItem="nIN-Yu-MVv" firstAttribute="top" secondItem="7P4-at-xiJ" secondAttribute="top" constant="95" id="KfX-Kb-amk"/>
+                            <constraint firstItem="nIN-Yu-MVv" firstAttribute="leading" secondItem="7P4-at-xiJ" secondAttribute="leading" constant="30" id="a94-lg-5xq"/>
+                            <constraint firstItem="7P4-at-xiJ" firstAttribute="trailing" secondItem="nIN-Yu-MVv" secondAttribute="trailing" constant="254" id="aaR-hX-zbF"/>
+                            <constraint firstItem="SJD-Z0-VEB" firstAttribute="leading" secondItem="7P4-at-xiJ" secondAttribute="leading" constant="148" id="c3f-cE-XJS"/>
+                            <constraint firstItem="SJD-Z0-VEB" firstAttribute="top" secondItem="7P4-at-xiJ" secondAttribute="top" constant="33" id="hQl-7u-kLY"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" image="shopping-bag" id="BL0-cA-aXp"/>
                 </viewController>

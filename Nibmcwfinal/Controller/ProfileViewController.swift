@@ -14,7 +14,6 @@ class ProfileViewController: UIViewController {
 
     }
     
-
     @IBAction func onSignoutPressed(_ sender: UIButton) {
         
     

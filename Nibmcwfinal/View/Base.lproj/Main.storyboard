@@ -268,6 +268,49 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="68.815592203898049"/>
         </scene>
+        <!--Food View Controller-->
+        <scene sceneID="TxR-WV-g3O">
+            <objects>
+                <viewController id="x0r-8C-3ce" customClass="FoodViewController" customModule="Nibmcwfinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VUw-Au-yhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsI-wj-Rwk">
+                                <rect key="frame" x="20" y="20" width="57" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-LG-qnJ">
+                                <rect key="frame" x="20" y="70" width="335" height="577"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x0r-8C-3ce" id="jY8-fi-sMO"/>
+                                    <outlet property="delegate" destination="x0r-8C-3ce" id="e7T-Fc-v0d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RRh-fb-r6r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RRh-fb-r6r" firstAttribute="trailing" secondItem="HsI-wj-Rwk" secondAttribute="trailing" constant="298" id="EXs-eN-HfK"/>
+                            <constraint firstItem="RRh-fb-r6r" firstAttribute="trailing" secondItem="SHg-LG-qnJ" secondAttribute="trailing" constant="20" id="J7K-Vh-mdI"/>
+                            <constraint firstItem="RRh-fb-r6r" firstAttribute="bottom" secondItem="SHg-LG-qnJ" secondAttribute="bottom" constant="20" id="OJe-Wz-9cp"/>
+                            <constraint firstItem="SHg-LG-qnJ" firstAttribute="leading" secondItem="RRh-fb-r6r" secondAttribute="leading" constant="20" id="RtM-fQ-VFm"/>
+                            <constraint firstItem="HsI-wj-Rwk" firstAttribute="top" secondItem="RRh-fb-r6r" secondAttribute="top" constant="20" id="UTd-kY-Djg"/>
+                            <constraint firstItem="SHg-LG-qnJ" firstAttribute="top" secondItem="HsI-wj-Rwk" secondAttribute="bottom" constant="20" id="VFE-KZ-Vql"/>
+                            <constraint firstItem="HsI-wj-Rwk" firstAttribute="leading" secondItem="RRh-fb-r6r" secondAttribute="leading" constant="20" id="y2q-Uh-eLV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblFood" destination="SHg-LG-qnJ" id="Gjm-sx-m7r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wg-TE-Apa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="952.17391304347836"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo" width="32" height="32"/>
@@ -279,6 +322,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

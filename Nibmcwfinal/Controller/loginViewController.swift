@@ -68,9 +68,10 @@ class loginViewController: UIViewController {
                 return
             }
             
-            if let result = authResult {
-                print("user Email: \(result.user.email ?? "No Found")")
-            }
+            // save user logged state
+            let sessionManager = SessionManager()
+            sessionManager.saveuserlogin()
+            
                 
             }
         }

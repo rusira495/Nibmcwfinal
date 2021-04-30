@@ -51,6 +51,7 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.5.0)
   - iOSDropDown (0.3.4)
+  - Kingfisher (6.3.0)
   - leveldb-library (1.22.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -58,12 +59,15 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Storage
   - iOSDropDown
+  - Kingfisher
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
@@ -77,9 +81,11 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - iOSDropDown
+    - Kingfisher
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Firebase: c121feb35e4126c0b355e3313fa9b487d47319fd
@@ -92,10 +98,12 @@ SPEC CHECKSUMS:
   GoogleUtilities: 284cddc7fffc14ae1907efb6f78ab95c1fccaedc
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 434e661c4c6c7ad3ae5d4dd030d90d3d5b1a7faf
+PODFILE CHECKSUM: 5dc0dff69b1579e2d641408a60923513e282921c
 
 COCOAPODS: 1.10.1

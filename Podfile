@@ -6,11 +6,14 @@ target 'Nibmcwfinal' do
   use_frameworks!
 
   # Pods for Nibmcwfinal
-pod 'Firebase/Auth'
+ pod 'Firebase/Auth'
  pod 'Firebase/Database'
  pod 'iOSDropDown'
  pod 'Firebase/Storage'
-  target 'NibmcwfinalTests' do
+ pod 'SwiftyJSON'
+ pod 'Kingfisher'
+
+target 'NibmcwfinalTests' do
     inherit! :search_paths
     # Pods for testing
   end

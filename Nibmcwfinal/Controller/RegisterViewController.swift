@@ -16,9 +16,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var txtphoneno: UITextField!
     @IBOutlet weak var txtemail: UITextField!
     
+    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ref = Database.database().reference()
         // Do any additional setup after loading the view.
     }
 
@@ -45,11 +47,28 @@ class RegisterViewController: UIViewController {
                 return
             }
             
+            
+            
             if let results = authResult {
                 print("user added with email: \(results.user.email ?? "Not Found")")
                 Loaf("User Register Success", state: .success, sender: self).show()
             }
             
+        }
+    }
+    
+    
+    func saveUserData(user: user){
+        self.ref.child("users").child(user.useremail).setValue(user) {
+            (Error,ref) in
+            
+            if let err = Error {
+                print(err.localizedDescription)
+                Loaf ("User Sign in failed", state:.error,sender:self).show()
+                return
+                }
+                
+            Loaf ("User Data save in database", state:.success,sender:self).show()
         }
     }
     

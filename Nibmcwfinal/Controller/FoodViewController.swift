@@ -34,6 +34,9 @@ extension FoodViewController {
             
             if let data = snapshot.value {
                 if let foodItems = data as? [String: Any] {
+                    
+                    
+                    
                     for item in foodItems {
                         if let foodInfo = item.value as? [String: Any] {
                             let singlefoodInfo = fooditem(

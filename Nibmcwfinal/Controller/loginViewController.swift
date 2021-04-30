@@ -15,11 +15,13 @@ class loginViewController: UIViewController {
     @IBOutlet weak var txtemail: UITextField!
     @IBOutlet weak var txtpassword: UITextField!
     
+    var ref: DatabaseReference!
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ref = Database.database().reference()
         
     }
     @IBAction func onloginpressed(_ sender: UIButton) {
@@ -61,7 +63,7 @@ class loginViewController: UIViewController {
     }
     
     func authenticateuser(email: String, password: String) {
-        Auth.auth().signIn(withEmail: email, password: password) {
+        Auth.auth().signIn(withEmail: email, password: password) { [self]
             authResult, error in
             
             if let err = error {
@@ -70,12 +72,24 @@ class loginViewController: UIViewController {
                 return
             }
             
+            if let email = authResult?.user.email {
+                self.getUserData(email: email)
+            }else {
+                Loaf("User email not found", state: .error, sender: self).show()
+            }
+            
+            
+            
             // save user logged state
-            let sessionManager = SessionManager()
-            sessionManager.saveuserlogin()
+            _ = SessionManager()
+            
             self.performSegue(withIdentifier: "SignInToHome", sender: nil)
                 
             }
         }
+    
+    func getUserData(email: String) {
+        
+    }
         
     }

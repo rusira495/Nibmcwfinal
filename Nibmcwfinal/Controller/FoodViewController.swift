@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SwiftyJSON
 
 class FoodViewController: UIViewController {
     
@@ -29,7 +30,28 @@ extension FoodViewController {
     func  getfoodItemsData()  {
         ref.child("foodItems").observe(.value, with: {
             (snapshot) in
-            print(snapshot.value)
+            
+            if let data = snapshot.value {
+                if let foodItems = data as? [String: Any] {
+                    for item in foodItems {
+                        if let foodInfo = item.value as? [String: Any] {
+                            let singlefoodInfo = fooditem(
+                                _id: "",
+                                foodname: foodInfo["name"] as! String,
+                                fooddescription: foodInfo["description"] as! String,
+                                foodprice: foodInfo["price"] as! Double,
+                                discount: foodInfo["discount"] as! Int,
+                                image: foodInfo["image"] as! String,
+                                category: foodInfo["category"] as! String)
+                            
+                            self.foodItems.append(singlefoodInfo)
+                      }
+                    }
+                    self.tblFood.reloadData()
+                    
+                }
+                
+            }
     
     })
     }

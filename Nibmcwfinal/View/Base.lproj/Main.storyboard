@@ -123,6 +123,7 @@
                     <connections>
                         <outlet property="txtemail" destination="una-Y4-pAj" id="Kbb-2E-FxO"/>
                         <outlet property="txtpassword" destination="u4W-wV-yrQ" id="NC0-Ei-9z0"/>
+                        <segue destination="x0r-8C-3ce" kind="presentation" identifier="SignInToHome" modalPresentationStyle="fullScreen" id="DSZ-7d-VnC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -309,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wg-TE-Apa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="952.17391304347836"/>
+            <point key="canvasLocation" x="138" y="860"/>
         </scene>
     </scenes>
     <resources>

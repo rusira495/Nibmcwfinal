@@ -12,7 +12,6 @@
 		CAE079EEFB7847DFB1DB141F /* Pods_Nibmcwfinal_NibmcwfinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E270DAA4BCF919D1FA42E8B /* Pods_Nibmcwfinal_NibmcwfinalUITests.framework */; };
 		CE144965263AD4AF007E5B59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE144964263AD4AF007E5B59 /* RegisterViewController.swift */; };
 		CE282BE4263C6F9C002C8157 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE282BE3263C6F9C002C8157 /* ProfileViewController.swift */; };
-		CE282BE9263C7808002C8157 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE282BE8263C7808002C8157 /* LaunchViewController.swift */; };
 		CE2F3634263BC1ED00FBEC92 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3633263BC1ED00FBEC92 /* SessionManager.swift */; };
 		CE2F3639263BCEFF00FBEC92 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3638263BCEFF00FBEC92 /* FoodViewController.swift */; };
 		CE2F3641263BD58500FBEC92 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F363F263BD58500FBEC92 /* FoodTableViewCell.swift */; };
@@ -57,7 +56,6 @@
 		A3AFF29E81FD7D07D54D98FD /* Pods-NibmcwfinalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibmcwfinalTests.debug.xcconfig"; path = "Target Support Files/Pods-NibmcwfinalTests/Pods-NibmcwfinalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE144964263AD4AF007E5B59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE282BE3263C6F9C002C8157 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		CE282BE8263C7808002C8157 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		CE2F3633263BC1ED00FBEC92 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		CE2F3638263BCEFF00FBEC92 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		CE2F363F263BD58500FBEC92 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 				CE144964263AD4AF007E5B59 /* RegisterViewController.swift */,
 				CE2F3638263BCEFF00FBEC92 /* FoodViewController.swift */,
 				CE282BE3263C6F9C002C8157 /* ProfileViewController.swift */,
-				CE282BE8263C7808002C8157 /* LaunchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -476,7 +473,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3AE5B5263A76CC00B7CE01 /* loginViewController.swift in Sources */,
-				CE282BE9263C7808002C8157 /* LaunchViewController.swift in Sources */,
 				CE2F3639263BCEFF00FBEC92 /* FoodViewController.swift in Sources */,
 				CE144965263AD4AF007E5B59 /* RegisterViewController.swift in Sources */,
 				CE2F3634263BC1ED00FBEC92 /* SessionManager.swift in Sources */,

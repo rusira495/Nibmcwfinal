@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9zd-hb-z5p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -332,42 +332,6 @@
             </objects>
             <point key="canvasLocation" x="137" y="910"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Z8V-nB-Tqr">
-            <objects>
-                <viewController id="9zd-hb-z5p" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CeK-8h-fEQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="LtT-Rl-mCf">
-                                <rect key="frame" x="103" y="217" width="168" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe NIBM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrQ-DU-iPf">
-                                <rect key="frame" x="126" y="571" width="235" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="95n-Yi-LjG"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
-                        <constraints>
-                            <constraint firstItem="95n-Yi-LjG" firstAttribute="trailing" secondItem="qrQ-DU-iPf" secondAttribute="trailing" constant="14" id="Kl0-As-PYk"/>
-                            <constraint firstItem="qrQ-DU-iPf" firstAttribute="leading" secondItem="95n-Yi-LjG" secondAttribute="leading" constant="126" id="OHl-jF-Ljs"/>
-                            <constraint firstItem="95n-Yi-LjG" firstAttribute="bottom" secondItem="qrQ-DU-iPf" secondAttribute="bottom" constant="67" id="aEA-4s-ZYP"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LaunchToSignIn" modalPresentationStyle="fullScreen" id="jjp-gs-cR9"/>
-                        <segue destination="de6-m8-DIl" kind="presentation" identifier="Launchtohome" modalPresentationStyle="fullScreen" id="Jet-Z2-uu5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HaR-Wy-Ja2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1359" y="396"/>
-        </scene>
         <!--Account-->
         <scene sceneID="h5g-1H-cvU">
             <objects>
@@ -389,13 +353,59 @@
                                     <action selector="onSignoutPressed:" destination="upM-yT-UTS" eventType="touchUpInside" id="dGS-6U-8Et"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="EHP-3h-dAl">
+                                <rect key="frame" x="63" y="208" width="249" height="107.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zDn-X7-GCP">
+                                        <rect key="frame" x="0.0" y="1.5" width="110.5" height="104.5"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="XA0-ZK-M5l">
+                                        <rect key="frame" x="138.5" y="0.0" width="110.5" height="107.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgF-O3-oqY">
+                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZs-ro-jzX">
+                                                <rect key="frame" x="0.0" y="43.5" width="110.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User PhoneNo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7u-mz-pCl">
+                                                <rect key="frame" x="0.0" y="87" width="110.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-8Y-AgT">
+                                <rect key="frame" x="142" y="40" width="90" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EeZ-pY-3GJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="EeZ-pY-3GJ" firstAttribute="trailing" secondItem="EHP-3h-dAl" secondAttribute="trailing" constant="63" id="3iz-kk-acd"/>
+                            <constraint firstItem="EHP-3h-dAl" firstAttribute="leading" secondItem="EeZ-pY-3GJ" secondAttribute="leading" constant="63" id="IZZ-a8-rgh"/>
+                            <constraint firstItem="Ryk-8Y-AgT" firstAttribute="top" secondItem="EeZ-pY-3GJ" secondAttribute="top" constant="40" id="JWc-r3-gJj"/>
+                            <constraint firstItem="uWA-w0-Fv5" firstAttribute="top" secondItem="EHP-3h-dAl" secondAttribute="bottom" constant="232.5" id="JXC-ee-tCC"/>
                             <constraint firstItem="EeZ-pY-3GJ" firstAttribute="trailing" secondItem="uWA-w0-Fv5" secondAttribute="trailing" constant="20" id="XEC-5J-Cgd"/>
+                            <constraint firstItem="EeZ-pY-3GJ" firstAttribute="trailing" secondItem="Ryk-8Y-AgT" secondAttribute="trailing" constant="143" id="Z3t-EV-MZZ"/>
+                            <constraint firstItem="EHP-3h-dAl" firstAttribute="top" secondItem="Ryk-8Y-AgT" secondAttribute="bottom" constant="138" id="b3B-qT-mQp"/>
                             <constraint firstItem="uWA-w0-Fv5" firstAttribute="leading" secondItem="EeZ-pY-3GJ" secondAttribute="leading" constant="20" id="hIC-qb-nR3"/>
                             <constraint firstItem="EeZ-pY-3GJ" firstAttribute="bottom" secondItem="uWA-w0-Fv5" secondAttribute="bottom" constant="30" id="nb0-55-8kB"/>
+                            <constraint firstItem="Ryk-8Y-AgT" firstAttribute="leading" secondItem="EeZ-pY-3GJ" secondAttribute="leading" constant="142" id="wEJ-nv-UxE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="user" id="zih-9S-qti"/>
@@ -421,12 +431,10 @@
             <point key="canvasLocation" x="1468" y="1641"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Jet-Z2-uu5"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="fast-food" width="32" height="32"/>
         <image name="logo" width="32" height="32"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="shopping-bag" width="32" height="32"/>
         <image name="user" width="32" height="32"/>
         <namedColor name="AccentColor">
@@ -437,9 +445,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

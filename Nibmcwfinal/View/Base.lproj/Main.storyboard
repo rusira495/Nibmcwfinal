@@ -269,7 +269,7 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="68.815592203898049"/>
         </scene>
-        <!--Item-->
+        <!--Food-->
         <scene sceneID="TxR-WV-g3O">
             <objects>
                 <viewController id="x0r-8C-3ce" customClass="FoodViewController" customModule="Nibmcwfinal" customModuleProvider="target" sceneMemberID="viewController">
@@ -304,7 +304,7 @@
                             <constraint firstItem="HsI-wj-Rwk" firstAttribute="leading" secondItem="RRh-fb-r6r" secondAttribute="leading" constant="20" id="y2q-Uh-eLV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="CsI-Hf-kIm"/>
+                    <tabBarItem key="tabBarItem" title="Food" image="fast-food" id="CsI-Hf-kIm"/>
                     <connections>
                         <outlet property="tblFood" destination="SHg-LG-qnJ" id="Gjm-sx-m7r"/>
                     </connections>
@@ -332,7 +332,7 @@
             </objects>
             <point key="canvasLocation" x="138" y="885"/>
         </scene>
-        <!--Item-->
+        <!--Account-->
         <scene sceneID="h5g-1H-cvU">
             <objects>
                 <viewController id="upM-yT-UTS" sceneMemberID="viewController">
@@ -342,13 +342,13 @@
                         <viewLayoutGuide key="safeArea" id="EeZ-pY-3GJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zih-9S-qti"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="user" id="zih-9S-qti"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iui-wY-8OT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1047" y="1642"/>
         </scene>
-        <!--Item-->
+        <!--Order-->
         <scene sceneID="1EY-Lf-mY5">
             <objects>
                 <viewController id="2bs-9H-QVb" sceneMemberID="viewController">
@@ -358,7 +358,7 @@
                         <viewLayoutGuide key="safeArea" id="7P4-at-xiJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="BL0-cA-aXp"/>
+                    <tabBarItem key="tabBarItem" title="Order" image="shopping-bag" id="BL0-cA-aXp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDr-Hm-JFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,7 +366,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fast-food" width="32" height="32"/>
         <image name="logo" width="32" height="32"/>
+        <image name="shopping-bag" width="32" height="32"/>
+        <image name="user" width="32" height="32"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

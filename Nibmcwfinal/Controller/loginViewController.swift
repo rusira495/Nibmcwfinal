@@ -25,42 +25,21 @@ class loginViewController: UIViewController {
         
     }
     @IBAction func onloginpressed(_ sender: UIButton) {
-        if validateInput() {
-            authenticateuser(email: txtemail.text!, password: txtpassword.text!)
-            
-            
-        } else {
-            print("Input Error Found")
-            
+        
+        if !InputFieldValidator.isValidEmail(txtemail.text ?? "") {
+            Loaf("Invalid Email Address", state: .error, sender: self).show()
+            return
         }
         
+        if !InputFieldValidator.isValidPassword(pass: txtpassword.text ?? "", minLength: 6, maxLength: 50) {
+            Loaf("Invalid Password", state: .error, sender: self).show()
+            return
+        }
+        
+        authenticateuser(email: txtemail.text!, password: txtpassword.text!)
         
     }
     
-    func validateInput() -> Bool {
-        
-
-        guard let email = txtemail.text else {
-            print("Email is Null")
-            return false
-        }
-        
-        guard let password = txtpassword.text else {
-            print("Password is Null")
-            return false
-        }
-        
-        if email.count < 5 {
-            print("Enter valid Email")
-            return false
-        }
-        
-        if password.count < 5 {
-            print("Enter valid password")
-            return false        }
-        
-        return true
-    }
     
     func authenticateuser(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [self]
@@ -72,24 +51,46 @@ class loginViewController: UIViewController {
                 return
             }
             
+            
             if let email = authResult?.user.email {
                 self.getUserData(email: email)
             }else {
-                Loaf("User email not found", state: .error, sender: self).show()
+                Loaf("User email Not found", state: .success, sender: self).show()
+                return
             }
             
             
             
-            // save user logged state
-            _ = SessionManager()
             
-            self.performSegue(withIdentifier: "SignInToHome", sender: nil)
                 
             }
         }
     
     func getUserData(email: String) {
+        ref.child("users")
+            .child(email
+            .replacingOccurrences(of: "@", with: "_")
+            .replacingOccurrences(of: ".", with: "_") ).observe(.value, with: {
+            (snapshot) in
+                
+                    if snapshot.hasChildren(){
+                        if let data = snapshot.value {
+                            
+                    if let userData = data as? [String: String] {
+                    let User = user(
+                        username: userData["username"] ?? "",
+                        useremail: userData["useremail"]!,
+                        userpassword: userData["userpassword"]!,
+                        userphone: userData["userphone"]!)
+                                
+                               let sessionMGR = SessionManager()
+                                sessionMGR.saveuserlogin(user: User)
+                        self.performSegue(withIdentifier: "SignInToHome", sender: nil)                          }
+                        }
+                    }else{
+                        Loaf("User Not found", state: .success, sender: self).show()                    }
+                
         
     }
-        
-    }
+            )}
+}

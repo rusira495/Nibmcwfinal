@@ -26,21 +26,33 @@ class RegisterViewController: UIViewController {
 
     
     @IBAction func onregister1pressed(_ sender: UIButton) {
-        if validateInput() {
-            registeruser(email: txtemail.text!, password: txtpassword.text!)
-            
-        }else {
-            print("Input Error found")
+        
+        
+        if !InputFieldValidator.isValidPassword(pass: txtpassword.text ?? "", minLength: 6, maxLength: 50) {
+            Loaf("Invalid Password", state: .error, sender: self).show()
+            return
         }
         
+        if !InputFieldValidator.isValidMobileNo(txtphoneno.text ?? "") {
+            Loaf("Invalid Mobile NO", state: .error, sender: self).show()
+            return
+        }
+        
+        if !InputFieldValidator.isValidEmail(txtemail.text ?? "") {
+            Loaf("Invalid Email", state: .error, sender: self).show()
+            return
+        }
+        let User = user(username: txtemail.text ?? "", useremail: txtemail.text ?? "", userpassword: txtpassword.text ?? "", userphone: txtphoneno.text ?? "")
+        
+        registeruser(user: User)
     }
     
     @IBAction func onRegisterPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
-    func registeruser(email: String,password: String){
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+    func registeruser(user: user){
+        Auth.auth().createUser(withEmail: user.useremail, password: user.userpassword) { authResult, error in
             if let err = error {
                 print(err.localizedDescription)
                 Loaf("User Sign up Failed", state: .error, sender: self).show()
@@ -48,6 +60,7 @@ class RegisterViewController: UIViewController {
             }
             
             
+            self.saveUserData(user: user)
             
             if let results = authResult {
                 print("user added with email: \(results.user.email ?? "Not Found")")
@@ -57,56 +70,37 @@ class RegisterViewController: UIViewController {
         }
     }
     
-    
-    func saveUserData(user: user){
-        self.ref.child("users").child(user.useremail).setValue(user) {
-            (Error,ref) in
+    func saveUserData(user: user) {
+        
+        let UserData = [
+            "username" : user.username,
+            "useremail" : user.useremail,
+            "userphone" : user.userphone,
+            "userpassword" : user.userpassword
+        ]
+        
+        self.ref.child("users")
+            .child(user.useremail
+            .replacingOccurrences(of: "@", with: "_")
+            .replacingOccurrences(of: ".", with: "_") )
+            .setValue(UserData) {
+            (error,ref) in
             
-            if let err = Error {
+            if let err = error {
                 print(err.localizedDescription)
-                Loaf ("User Sign in failed", state:.error,sender:self).show()
+                Loaf("User Data Not Saved On Database", state: .success, sender: self).show()
                 return
+            }
+            
+                Loaf("User Data Saved On Database", state: .success, sender: self).show {
+                    type in
                 }
-                
-            Loaf ("User Data save in database", state:.success,sender:self).show()
+                self.dismiss(animated: true, completion: nil)
+            
         }
+        
     }
     
-    func validateInput() ->Bool {
-        
-        guard let email = txtemail.text else {
-            print("Email is Null")
-            return false
-        }
-        
-        guard let phoneno = txtphoneno.text else {
-            print("Phoneno is Null")
-            return false
-        }
-        
-        guard let password = txtpassword.text else {
-            print("Password is Null")
-            return false
-        }
-        
-        if email.count < 5 {
-            print("Enter Email")
-            return false
-        }
-        
-        if phoneno.count < 5 {
-            print("Enter Valid PhoneNO")
-            return false
-        }
-        
-        if password.count < 5 {
-            print("Enter Correct Password")
-            return false
-        }
-        
-        return true
-    }
-        
     }
     
 

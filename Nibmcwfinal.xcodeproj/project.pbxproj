@@ -11,12 +11,12 @@
 		8133D2F30B6E197FC5F86C6B /* Pods_Nibmcwfinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF3521909057789C3A7A611 /* Pods_Nibmcwfinal.framework */; };
 		CAE079EEFB7847DFB1DB141F /* Pods_Nibmcwfinal_NibmcwfinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E270DAA4BCF919D1FA42E8B /* Pods_Nibmcwfinal_NibmcwfinalUITests.framework */; };
 		CE144965263AD4AF007E5B59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE144964263AD4AF007E5B59 /* RegisterViewController.swift */; };
-		CE282BE4263C6F9C002C8157 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE282BE3263C6F9C002C8157 /* ProfileViewController.swift */; };
 		CE2F3634263BC1ED00FBEC92 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3633263BC1ED00FBEC92 /* SessionManager.swift */; };
 		CE2F3639263BCEFF00FBEC92 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3638263BCEFF00FBEC92 /* FoodViewController.swift */; };
 		CE2F3641263BD58500FBEC92 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F363F263BD58500FBEC92 /* FoodTableViewCell.swift */; };
 		CE2F3642263BD58500FBEC92 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2F3640263BD58500FBEC92 /* FoodTableViewCell.xib */; };
 		CE3AE5B5263A76CC00B7CE01 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */; };
+		CE6598EA26456C870079CD84 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6598E926456C870079CD84 /* AccountViewController.swift */; };
 		CE87B06D263A800400E41A51 /* entitymodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87B06C263A800400E41A51 /* entitymodel.swift */; };
 		CED189B92637F5E9000EE982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189B82637F5E9000EE982 /* AppDelegate.swift */; };
 		CED189BB2637F5E9000EE982 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189BA2637F5E9000EE982 /* SceneDelegate.swift */; };
@@ -25,6 +25,7 @@
 		CED189C52637F5EA000EE982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED189C32637F5EA000EE982 /* LaunchScreen.storyboard */; };
 		CED189D02637F5EA000EE982 /* NibmcwfinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189CF2637F5EA000EE982 /* NibmcwfinalTests.swift */; };
 		CED189DB2637F5EA000EE982 /* NibmcwfinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189DA2637F5EA000EE982 /* NibmcwfinalUITests.swift */; };
+		CEDCEE102645115C00DB969E /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDCEE0F2645115C00DB969E /* InputValidator.swift */; };
 		CEEA121E2639E1160051BC2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEEA121D2639E1160051BC2F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -55,12 +56,12 @@
 		5DF3521909057789C3A7A611 /* Pods_Nibmcwfinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nibmcwfinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AFF29E81FD7D07D54D98FD /* Pods-NibmcwfinalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibmcwfinalTests.debug.xcconfig"; path = "Target Support Files/Pods-NibmcwfinalTests/Pods-NibmcwfinalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE144964263AD4AF007E5B59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		CE282BE3263C6F9C002C8157 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE2F3633263BC1ED00FBEC92 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		CE2F3638263BCEFF00FBEC92 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		CE2F363F263BD58500FBEC92 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		CE2F3640263BD58500FBEC92 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
 		CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		CE6598E926456C870079CD84 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE87B06C263A800400E41A51 /* entitymodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entitymodel.swift; sourceTree = "<group>"; };
 		CED189B52637F5E9000EE982 /* Nibmcwfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nibmcwfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED189B82637F5E9000EE982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		CED189D62637F5EA000EE982 /* NibmcwfinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NibmcwfinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED189DA2637F5EA000EE982 /* NibmcwfinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibmcwfinalUITests.swift; sourceTree = "<group>"; };
 		CED189DC2637F5EA000EE982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDCEE0F2645115C00DB969E /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		CEEA121D2639E1160051BC2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF5AA7DF7964887F502934D8 /* Pods-Nibmcwfinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nibmcwfinal.release.xcconfig"; path = "Target Support Files/Pods-Nibmcwfinal/Pods-Nibmcwfinal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2F3633263BC1ED00FBEC92 /* SessionManager.swift */,
+				CEDCEE0F2645115C00DB969E /* InputValidator.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -159,7 +162,7 @@
 				CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */,
 				CE144964263AD4AF007E5B59 /* RegisterViewController.swift */,
 				CE2F3638263BCEFF00FBEC92 /* FoodViewController.swift */,
-				CE282BE3263C6F9C002C8157 /* ProfileViewController.swift */,
+				CE6598E926456C870079CD84 /* AccountViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -477,8 +480,9 @@
 				CE144965263AD4AF007E5B59 /* RegisterViewController.swift in Sources */,
 				CE2F3634263BC1ED00FBEC92 /* SessionManager.swift in Sources */,
 				CED189B92637F5E9000EE982 /* AppDelegate.swift in Sources */,
+				CEDCEE102645115C00DB969E /* InputValidator.swift in Sources */,
+				CE6598EA26456C870079CD84 /* AccountViewController.swift in Sources */,
 				CE2F3641263BD58500FBEC92 /* FoodTableViewCell.swift in Sources */,
-				CE282BE4263C6F9C002C8157 /* ProfileViewController.swift in Sources */,
 				CE87B06D263A800400E41A51 /* entitymodel.swift in Sources */,
 				CED189BB2637F5E9000EE982 /* SceneDelegate.swift in Sources */,
 			);

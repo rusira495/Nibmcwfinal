@@ -18,6 +18,7 @@
 		CE3AE5B5263A76CC00B7CE01 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */; };
 		CE6598EA26456C870079CD84 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6598E926456C870079CD84 /* AccountViewController.swift */; };
 		CE87B06D263A800400E41A51 /* entitymodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87B06C263A800400E41A51 /* entitymodel.swift */; };
+		CEB7DC5F2645A3600055CE7D /* FoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7DC5E2645A3600055CE7D /* FoodItemViewController.swift */; };
 		CED189B92637F5E9000EE982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189B82637F5E9000EE982 /* AppDelegate.swift */; };
 		CED189BB2637F5E9000EE982 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED189BA2637F5E9000EE982 /* SceneDelegate.swift */; };
 		CED189C02637F5E9000EE982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED189BE2637F5E9000EE982 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		CE3AE5B4263A76CC00B7CE01 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		CE6598E926456C870079CD84 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE87B06C263A800400E41A51 /* entitymodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entitymodel.swift; sourceTree = "<group>"; };
+		CEB7DC5E2645A3600055CE7D /* FoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewController.swift; sourceTree = "<group>"; };
 		CED189B52637F5E9000EE982 /* Nibmcwfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nibmcwfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED189B82637F5E9000EE982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED189BA2637F5E9000EE982 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				CE144964263AD4AF007E5B59 /* RegisterViewController.swift */,
 				CE2F3638263BCEFF00FBEC92 /* FoodViewController.swift */,
 				CE6598E926456C870079CD84 /* AccountViewController.swift */,
+				CEB7DC5E2645A3600055CE7D /* FoodItemViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3AE5B5263A76CC00B7CE01 /* loginViewController.swift in Sources */,
+				CEB7DC5F2645A3600055CE7D /* FoodItemViewController.swift in Sources */,
 				CE2F3639263BCEFF00FBEC92 /* FoodViewController.swift in Sources */,
 				CE144965263AD4AF007E5B59 /* RegisterViewController.swift in Sources */,
 				CE2F3634263BC1ED00FBEC92 /* SessionManager.swift in Sources */,

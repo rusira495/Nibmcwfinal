@@ -96,9 +96,7 @@ class RegisterViewController: UIViewController {
                     type in
                 }
                 self.dismiss(animated: true, completion: nil)
-            
         }
-        
     }
     
     }

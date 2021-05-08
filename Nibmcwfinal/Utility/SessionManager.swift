@@ -35,6 +35,7 @@ class SessionManager {
     }
     
     func clearuserLoggedState() {
+        
         UserDefaults.standard.setValue(false, forKey: "User_Logged")
     }
     

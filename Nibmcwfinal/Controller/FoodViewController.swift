@@ -27,6 +27,13 @@ class FoodViewController: UIViewController {
         getfoodItemsData()
     }
     
+    @IBAction func btnMenu(_ sender: Any) {
+        
+        performSegue(withIdentifier: "menuNav", sender: self)
+    }
+    @IBAction func btnCategoryClick(_ sender: Any) {
+        performSegue(withIdentifier: "CatNav", sender: self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeToViewFoodItem" {
             let destinationvc = segue.destination as! FoodItemViewController

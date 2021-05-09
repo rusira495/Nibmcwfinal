@@ -6,6 +6,7 @@ target 'Nibmcwfinal' do
   use_frameworks!
 
   # Pods for Nibmcwfinal
+
  pod 'Firebase/Auth'
  pod 'Firebase/Database'
  pod 'iOSDropDown'
